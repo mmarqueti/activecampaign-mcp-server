@@ -4,13 +4,13 @@
   "description": "ActiveCampaign MCP Server - Servidor MCP para integração com a API do ActiveCampaign",
   "author": "Marcelo Marchetti",
   "license": "MIT",
-  "homepage": "https://github.com/seu-usuario/activecampaign-mcp-server#readme",
+  "homepage": "https://github.com/mmarqueti/activecampaign-mcp-server#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seu-usuario/activecampaign-mcp-server.git"
+    "url": "git+https://github.com/mmarqueti/activecampaign-mcp-server.git"
   },
   "bugs": {
-    "url": "https://github.com/seu-usuario/activecampaign-mcp-server/issues"
+    "url": "https://github.com/mmarqueti/activecampaign-mcp-server/issues"
   },
   "keywords": [
     "activecampaign",

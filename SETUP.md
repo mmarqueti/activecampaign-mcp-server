@@ -23,10 +23,10 @@ ACTIVECAMPAIGN_API_KEY=
 
 ### 2. Criar .env
 
-Copie o arquivo `.env.example` para `.env` e preencha com suas credenciais:
+Copie o arquivo `env.example` para `.env` e preencha com suas credenciais:
 
 ```bash
-cp .env.example .env
+cp env.example .env
 ```
 
 ## 🔧 Configuração do ActiveCampaign

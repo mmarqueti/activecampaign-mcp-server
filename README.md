@@ -281,18 +281,22 @@ Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICEN
 
 - [Documentação da API do ActiveCampaign](https://developers.activecampaign.com/reference/overview)
 - [Model Context Protocol](https://github.com/modelcontextprotocol/specification)
-- [Issues](https://github.com/seu-usuario/activecampaign-mcp-server/issues)
+- [Issues](https://github.com/mmarqueti/activecampaign-mcp-server/issues)
 
 ## 📞 Suporte
 
 Se você encontrar algum problema ou tiver dúvidas:
 
-1. Verifique se existe uma [issue](https://github.com/seu-usuario/activecampaign-mcp-server/issues) similar
+1. Verifique se existe uma [issue](https://github.com/mmarqueti/activecampaign-mcp-server/issues) similar
 2. Crie uma nova issue com detalhes do problema
 3. Entre em contato através das issues do GitHub
 
 ---
 
 <div align="center">
-  Feito com ❤️ para a comunidade de desenvolvedores
+  Se precisar de soluções de MCP customizadas, entre em contato comigo. marcelo at marcelomarchetti.com.br
+</div> 
+
+<div align="center">
+  Feito com ❤️ para a comunidade de desenvolvedores e times de marketing
 </div> 

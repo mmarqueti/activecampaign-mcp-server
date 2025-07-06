@@ -38,7 +38,7 @@ Valorizamos todos os tipos de contribuições:
 1. **Fork o repositório**
 2. **Clone seu fork**
    ```bash
-   git clone https://github.com/seu-usuario/activecampaign-mcp-server.git
+   git clone https://github.com/mmarqueti/activecampaign-mcp-server.git
    cd activecampaign-mcp-server
    ```
 
@@ -49,7 +49,7 @@ Valorizamos todos os tipos de contribuições:
 
 4. **Configure as variáveis de ambiente**
    ```bash
-   cp .env.example .env
+   cp env.example .env
    # Preencha com suas credenciais do ActiveCampaign
    ```
 
