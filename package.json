@@ -1,0 +1,59 @@
+{
+  "name": "activecampaign-mcp-server",
+  "version": "1.0.0",
+  "description": "ActiveCampaign MCP Server - Servidor MCP para integração com a API do ActiveCampaign",
+  "author": "Marcelo Marchetti",
+  "license": "MIT",
+  "homepage": "https://github.com/seu-usuario/activecampaign-mcp-server#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seu-usuario/activecampaign-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seu-usuario/activecampaign-mcp-server/issues"
+  },
+  "keywords": [
+    "activecampaign",
+    "mcp",
+    "model-context-protocol",
+    "api",
+    "typescript",
+    "automation",
+    "crm",
+    "email-marketing"
+  ],
+  "main": "dist/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/inspector": "^0.15.0",
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js",
+    "inspect-dev": "npx @modelcontextprotocol/inspector tsx src/index.ts",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "type-check": "tsc --noEmit",
+    "lint": "echo 'Linting not configured yet'",
+    "test": "echo 'Tests not configured yet'"
+  }
+}
