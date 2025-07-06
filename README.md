@@ -101,6 +101,144 @@ npm run dev
 npm start
 ```
 
+### Configurando no Claude Desktop
+
+Para usar este servidor MCP com o Claude Desktop, você precisa configurá-lo no arquivo de configuração do Claude:
+
+> **⚠️ Nota**: Esta funcionalidade requer Claude Desktop versão 0.7.0 ou superior com suporte a MCP.
+
+#### 1. Localize o arquivo de configuração
+
+**macOS:**
+```bash
+~/Library/Application Support/Claude/claude_desktop_config.json
+```
+
+**Windows:**
+```bash
+%APPDATA%\Claude\claude_desktop_config.json
+```
+
+#### 2. Adicione a configuração do servidor
+
+Edite o arquivo `claude_desktop_config.json` e adicione:
+
+```json
+{
+  "mcpServers": {
+    "activecampaign": {
+      "command": "node",
+      "args": ["/caminho/para/seu/projeto/dist/index.js"],
+      "env": {
+        "ACTIVECAMPAIGN_API_URL": "https://seuaccount.api-us1.com",
+        "ACTIVECAMPAIGN_API_KEY": "sua-api-key-aqui"
+      }
+    }
+  }
+}
+```
+
+**Exemplo com caminho completo:**
+```json
+{
+  "mcpServers": {
+    "activecampaign": {
+      "command": "node",
+      "args": ["/Users/seunome/projetos/activecampaign-mcp-server/dist/index.js"],
+      "env": {
+        "ACTIVECAMPAIGN_API_URL": "https://seuaccount.api-us1.com",
+        "ACTIVECAMPAIGN_API_KEY": "abc123def456ghi789"
+      }
+    }
+  }
+}
+```
+
+#### 3. Compile o projeto
+
+Certifique-se de que o projeto está compilado:
+
+```bash
+# Com npm
+npm run build
+
+# Com pnpm (recomendado)
+pnpm build
+```
+
+#### 4. Teste o servidor (opcional)
+
+Antes de configurar no Claude Desktop, você pode testar se o servidor está funcionando:
+
+```bash
+# Teste com inspector MCP
+pnpm inspect
+
+# Ou teste direto
+node dist/index.js
+```
+
+#### 5. Reinicie o Claude Desktop
+
+Feche completamente o Claude Desktop e abra novamente para carregar a nova configuração.
+
+#### 6. Verificar se funcionou
+
+No Claude Desktop, você deve poder usar comandos como:
+
+- *"Busque o contato com email usuario@exemplo.com"*
+- *"Mostre os eventos de tracking do contato ID 123"*
+- *"Pesquise contatos com o nome João Silva"*
+
+#### 🚨 Troubleshooting
+
+**Se as ferramentas não aparecerem:**
+
+1. **Verifique o caminho**: Certifique-se de que o caminho para `dist/index.js` está correto
+2. **Verifique a compilação**: Execute `npm run build` novamente
+3. **Verifique as credenciais**: Confirme se a API URL e Key estão corretas
+4. **Verifique os logs**: Olhe os logs do Claude Desktop para erros
+5. **Reinicie completamente**: Feche o Claude Desktop pelo Activity Monitor/Task Manager
+
+**Configuração alternativa com variáveis de ambiente do sistema:**
+
+```json
+{
+  "mcpServers": {
+    "activecampaign": {
+      "command": "node",
+      "args": ["/caminho/para/seu/projeto/dist/index.js"]
+    }
+  }
+}
+```
+
+Neste caso, defina as variáveis no seu sistema:
+```bash
+export ACTIVECAMPAIGN_API_URL="https://seuaccount.api-us1.com"
+export ACTIVECAMPAIGN_API_KEY="sua-api-key-aqui"
+```
+
+#### 🧪 Testando as Ferramentas
+
+Uma vez configurado, você pode testar as ferramentas diretamente no Claude Desktop:
+
+**Exemplo de comandos:**
+
+```
+🔍 Buscar contato:
+"Busque informações do contato john@exemplo.com no ActiveCampaign"
+
+📊 Análise de engajamento:
+"Mostre os eventos de email dos últimos 30 dias para o contato ID 123"
+
+🔍 Pesquisa avançada:
+"Pesquise todos os contatos que têm 'CEO' no nome e me mostre suas informações completas"
+
+📈 Relatório de atividade:
+"Analise o comportamento de engajamento do contato maria@empresa.com nos últimos 3 meses"
+```
+
 ### Ferramentas Disponíveis
 
 #### 1. Buscar Contato por Email
