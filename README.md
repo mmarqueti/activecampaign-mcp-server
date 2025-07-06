@@ -432,9 +432,9 @@ Se você encontrar algum problema ou tiver dúvidas:
 ---
 
 <div align="center">
-  Se precisar de soluções de MCP customizadas, entre em contato comigo. marcelo at marcelomarchetti.com.br
+  Se precisar de soluções de MCP customizadas, entre em contato comigo. marcelo at marcelomarchetti.com
 </div> 
-
+<br/>
 <div align="center">
   Feito com ❤️ para a comunidade de desenvolvedores e times de marketing
 </div> 
