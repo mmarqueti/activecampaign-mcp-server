@@ -8,6 +8,10 @@
 
 Um servidor MCP (Model Context Protocol) para integração com a API do ActiveCampaign, permitindo consultas e análises de contatos e eventos de tracking através de ferramentas AI-friendly.
 
+<a href="https://glama.ai/mcp/servers/@mmarqueti/activecampaign-mcp-server">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@mmarqueti/activecampaign-mcp-server/badge" alt="ActiveCampaign Server MCP server" />
+</a>
+
 ## ✨ Funcionalidades
 
 ### 🔍 Gerenciamento de Contatos
